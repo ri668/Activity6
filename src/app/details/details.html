@@ -1,0 +1,17 @@
+<div *ngIf="product; else notFound">
+  <div class="card product-card">
+    <div class="card-body">
+      <h3 class="product-title">{{ product.name }}</h3>
+      <p class="product-info"><b>Price:</b> ₱{{ product.price | number }}</p>
+      <p class="product-info"><b>Location:</b> {{ product.location }}</p>
+      <p class="product-info"><b>Details:</b> {{ product.details }}</p>
+
+      <a class="btn btn-success mt-3" routerLink="/products">Go Back</a>
+    </div>
+  </div>
+</div>
+
+<ng-template #notFound>
+  <p class="text-center text-danger mt-5">Car not found.</p>
+</ng-template>
+

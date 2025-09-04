@@ -1,0 +1,53 @@
+/* Custom card styling */
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.highlight-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3c72;
+  margin-bottom: 25px;
+}
+
+/* Subtitle highlights */
+.highlight-sub {
+  color: #e67e22;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Card text */
+.card-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+/* Button styling */
+.custom-btn {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: none;
+}
+
+.custom-btn:hover {
+  background: linear-gradient(135deg, #d35400, #a84300);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}

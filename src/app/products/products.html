@@ -1,0 +1,28 @@
+<table class="product-table table table-striped table-hover">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Price</th>
+    <th scope="col">Location</th>
+    <th scope="col">Details</th>
+    <th scope="col">Action</th>
+  </tr>
+</thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price | currency:'PHP':'symbol' }}</td>
+      <td>{{ product.location }}</td>
+      <td>{{ product.details }}</td>
+      <td>
+        <a [routerLink]="['/details', product.id]" class="btn-link">
+          View Details
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
